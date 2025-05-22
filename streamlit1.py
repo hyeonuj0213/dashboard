@@ -72,5 +72,5 @@ with tab3:
         title=f"{selected_x} vs {selected_y}"
     )
     st.plotly_chart(fig_scatter, use_container_width=True)
-
+    st.write(df.head())
     st.markdown("선형 추세선을 통해 변수 간 관계를 시각적으로 파악할 수 있습니다.")
