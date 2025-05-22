@@ -10,6 +10,11 @@ def load_data():
     df = df.rename(columns={'country_name': 'Country', 'ladder_score': 'Happiness_Score'})
     return df
 
+import os
+if os.path.exists("world-happiness-2024.csv"):
+    print("파일이 존재합니다.")
+else:
+    print("파일이 존재하지 않습니다.")
 df = load_data()
 
 # 제목
