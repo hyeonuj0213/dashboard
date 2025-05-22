@@ -41,7 +41,7 @@ with tab1:
 # 탭2: 행복 점수 상위 10개국 그래프
 with tab2:
     st.subheader("행복 점수 상위 10개국")
-    top10 = df.sort_values("Happiness_Score", ascending=False).head(10)
+    top10 = df.sort_values("Happiness_Score", ascending=True).head(10)
     fig_bar = px.bar(
         top10,
         x="Happiness_Score",
